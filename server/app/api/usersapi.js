@@ -92,29 +92,23 @@ exports.getProfile = {
 
 }
 
-/*
-exports.getViewForUser = {
+exports.getFriendsTweets = {
 
   auth: {
     strategy: 'jwt',
   },
 
-  handler: function(request, reply){
-    Tweet.find({userId: request.params.id}).sort({date: -1}).then(tweets => {
-      reply(tweets);
-    }).catch(err => {
-      console.log(err);
+  handler: function(request, reply) {
+    console.log('got request');
+    User.findOne({ _id: request.auth.credentials.id }).then (user => {
+      Tweet.find({ 'userId': { $in: user.friends } }).populate('userId')
+        .then(tweets => {
+          console.log(tweets);
+          reply(tweets);
+        });
     });
   }
 }
-*/
-
-
-/* NOTE */
-/* user id and email can be retrieved from any request by request.auth.credentials.id/email */
-
-
-
 
 exports.getSettings = {
   
@@ -132,7 +126,6 @@ exports.getSettings = {
   },
 
 };
-
 
   exports.updateSettings = {
     

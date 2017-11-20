@@ -1,0 +1,31 @@
+<template>
+        <style type="text/css">
+            .center {
+                margin: 0 auto !important;
+            }
+    
+            .top-margin {
+                margin-top: 1em !important;
+            }
+        </style>
+    
+        <div repeat.for="tweet of tweets" class="center">
+            <div class="ui card center top-margin">
+                <div class="content">
+                    <div class="header">@${tweet.userId.userName} wrote</div>
+                    <div class="meta">
+                        <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <p>${tweet.text}</p>
+                </div>
+                <div class="extra content">
+                    <p>${tweet.time}</p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    
+    </template>

@@ -14,6 +14,6 @@ module.exports = [
   { method: 'POST', path: '/api/users/updateSettings', config: UsersApi.updateSettings },
   { method: 'GET', path: '/api/users/getSettings', config: UsersApi.getSettings },
   { method: 'GET', path: '/api/users/getAllTweets', config: UsersApi.getAllTweets },
-  { method: 'GET', path: '/api/users/getProfile', config: UsersApi.getProfile }
-  //{ method: 'GET', path: '/api/users/getAllTweets', config: UsersApi.getAllTweets }
+  { method: 'GET', path: '/api/users/getProfile', config: UsersApi.getProfile },
+  { method: 'GET', path: '/api/users/getFriendsTweets', config: UsersApi.getFriendsTweets }
 ];

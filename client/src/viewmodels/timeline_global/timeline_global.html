@@ -13,9 +13,12 @@
         <div class="ui card center top-margin">
             <div class="content">
                 <div class="header">@${tweet.userId.userName} wrote</div>
+                <div class="meta">
+                    <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
+                </div>
             </div>
             <div class="content">
-                    ${tweet.text}
+                <p>${tweet.text}</p>
             </div>
             <div class="extra content">
                 <p>${tweet.time}</p>

@@ -124,6 +124,10 @@ export default class RiderService {
   getGlobalTweets(){
     return this.ac.get('/api/users/getAllTweets');
   }
+
+  getFriendsTweets() {
+    return this.ac.get('/api/users/getFriendsTweets');
+  }
   
 
 

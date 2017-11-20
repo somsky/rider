@@ -12,6 +12,7 @@
         "firstName": "Marge",
         "lastName": "Simpson",
         "userName": "margexD",
+        "friends": ["->users.homer"],
         "email": "marge@simpson.com",
         "password": "secret"
       },
@@ -71,6 +72,14 @@
       "tweet_three": {
         "text": "starbucks is sooo good !!!!1eleven",
         "userId": "->users.marge"
+      },
+      "tweet_four": {
+        "text": "Someone got some duff ? This alcoholic right here is running low on fuel.",
+        "userId": "->users.homer"
+      },
+      "tweet_five": {
+        "text": "I'm homer. Is this the internet ?",
+        "userId": "->users.homer"
       }
     }
 
