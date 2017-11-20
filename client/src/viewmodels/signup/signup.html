@@ -1,0 +1,24 @@
+<template>
+
+  <form submit.delegate="register()" class="ui stacked segment form">
+    <h3 class="ui header">Sign up</h3>
+    <div class="field">
+      <label>first name</label> <input type="text" placeholder="" value.bind="firstName"/>
+    </div>
+    <div class="field">
+      <label>last name</label> <input type="text" placeholder="" value.bind="lastName"/>
+    </div>
+    <div class="field">
+      <label>username</label> <input type="text" placeholder="" value.bind="userName"/>
+    </div>
+    <div class="field">
+      <label>Email</label> <input type="text" placeholder="" value.bind="email"/>
+    </div>
+    <div class="field">
+      <label>Password</label> <input type="password" value.bind="password"/>
+    </div>
+    <button class="ui blue submit button">Sign up</button>
+    <h3>${prompt}</h3>
+  </form>
+
+</template>

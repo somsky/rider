@@ -1,0 +1,16 @@
+<template>
+    <div class="ui centered grid card-margin">
+        <div class="column">
+            <form submit.delegate="postTweet()" class="ui stacked segment form card-margin">
+            <h3 class="ui header">Share your thoughts</h3>
+                
+                <div class="field">
+                    <label>Text</label> <input type="text" placeholder="" value.bind="tweetText"/>
+                </div>
+                
+                <button class="ui blue submit button">Post</button>
+                <h3>${prompt}</h3>
+            </form>
+        </div>
+    </div>
+</template>

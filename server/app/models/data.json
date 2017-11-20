@@ -1,0 +1,77 @@
+{
+    "users": {
+      "_model": "User",
+      "homer": {
+        "firstName": "Homer",
+        "lastName": "Simpson",
+        "userName": "Elhomer",
+        "email": "homer@simpson.com",
+        "password": "secret"
+      },
+      "marge": {
+        "firstName": "Marge",
+        "lastName": "Simpson",
+        "userName": "margexD",
+        "email": "marge@simpson.com",
+        "password": "secret"
+      },
+      "bart": {
+        "firstName": "Bart",
+        "lastName": "Simpson",
+        "userName": "Elbarto",
+        "email": "bart@simpson.com",
+        "password": "secret"
+      }
+    },
+    "candidates": {
+      "_model": "Candidate",
+      "lisa": {
+        "firstName": "Lisa",
+        "lastName": "Simpson",
+        "office": "President"
+      },
+      "donald": {
+        "firstName": "Donald",
+        "lastName": "Simpson",
+        "office": "President"
+      }
+    },
+    "donations": {
+      "_model": "Donation",
+      "one": {
+        "amount": 40,
+        "method": "paypal",
+        "donor": "->users.bart",
+        "candidate": "->candidates.lisa"
+      },
+      "two": {
+        "amount": 90,
+        "method": "direct",
+        "donor": "->users.marge",
+        "candidate": "->candidates.lisa"
+      },
+      "three": {
+        "amount": 430,
+        "method": "paypal",
+        "donor": "->users.homer",
+        "candidate": "->candidates.donald"
+      }
+    },
+
+    "tweets": {
+      "_model": "Tweet",
+      "tweet_one": {
+        "text": "Hi, I am m a test tweet",
+        "userId": "->users.marge"
+      },
+      "tweet_two": {
+        "text": "Yo guys it's me. Bart S in da house.",
+        "userId": "->users.bart"
+      },
+      "tweet_three": {
+        "text": "starbucks is sooo good !!!!1eleven",
+        "userId": "->users.marge"
+      }
+    }
+
+  }

@@ -1,0 +1,159 @@
+
+
+<template>
+<div class="ui container">
+  <link type="text/css" rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+  <section class="ui container body-margin">
+      
+      <body class = "ui container">
+          
+          <section class="banner">
+            <div class="bannertext">
+              <h1> Rider </h1>
+            </div>
+          </section>
+      
+
+      
+          <require from="nav-bar.html"></require>
+          <div class="ui container page-host">
+            <nav-bar router.bind="router"></nav-bar>
+            <router-view></router-view>
+          </div>
+
+        
+
+      
+        <div class="ui stacked grid segment">
+      
+          <div class="ui three column row">
+      
+            <div class="column">
+              <h2> Connect with your friends </h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    Publicize your own tweets and view the one's of your friends.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge hashtag icon"></i>
+                </div>
+              </div>
+            </div> 
+          <div class="column">
+              <h2> Share your thoughts</h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    Let the community know what you think.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge comments icon"></i>
+                </div>
+              </div>
+            </div>
+      
+          <div class="column">
+              <h2> Image support</h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    If words aren't enough - Use images to express yourself.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge image icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>	
+      
+        <div class="ui three column row">
+      
+            <div class="column">
+              <h2> Global splits view</h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    View Splits from every user of this small community.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge sidebar icon"></i>
+                </div>
+              </div>
+            </div>
+      
+            <div class="column">
+              <h2> Control the cringe </h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    Remeber that old embarassing tweet ? Simply delete it.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge delete calendar icon"></i>
+                </div>
+              </div>
+            </div>
+      
+            <div class="column">
+              <h2> Open source </h2>
+              <div class="ui left aligned two column grid">
+                <div class="column">
+                  <section>
+                    Get the complete source code at my github repo.
+                  </section>	
+                </div>
+                <div class="column">
+                  <i class="huge github icon"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <hr>
+      
+      
+      </section>
+
+</div>
+</template>
+<!--
+<template>
+
+  <div class="ui container">
+
+    <nav class="ui inverted menu">
+      <header class="header item"><a href="/"> Donation </a></header>
+      <div class="right menu">
+        <div show.bind="!loggedIn">
+          <a class="item" click.trigger="signup()"> Signup </a>
+        </div>
+        <div show.bind="loggedIn">
+          <a class="item" click.trigger="logout()"> Logout </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="ui row">
+      <section class="ui five wide column">
+        <!--<compose view-model="./viewmodels/login/login"></compose>-->
+        <!--compose view-model="./viewmodels/signup/signup"></compose>
+      </section>
+    </div>
+
+  </div>
+  
+</template-->
