@@ -3,6 +3,7 @@
 const Hapi = require('hapi');
 const corsHeaders = require('hapi-cors-headers');
 const utils = require('./app/api/utils.js');
+//const fs = require('fs');
 
 var server = new Hapi.Server();
 server.connection({ port: process.env
@@ -15,6 +16,8 @@ server.register([require('inert'), require('vision'), require('hapi-auth-cookie'
   if (err) {
     throw err;
   }
+
+  //const a = fs.readFileSync('./avatar.png');;
 
   server.views({
     engines: {

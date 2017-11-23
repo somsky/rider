@@ -2,6 +2,9 @@ const utils = require('./utils');
 const User = require('../models/user');
 const Tweet = require('../models/tweet');
 const Joi = require('joi');
+const multiparty = require('multiparty');
+const util = require('util');
+const fs = require('fs');
 
 /* Authenticate sends back a json web token when an email and a matching
     password are provided */
@@ -192,3 +195,52 @@ exports.register = {
   },
 
 };
+
+exports.deleteTweets = {
+  auth: {
+    strategy: 'jwt',
+  },
+
+  handler: function (request, reply) {
+    console.log('called');
+    for (let i = 0; i < request.payload.length; i++){
+      console.log(request.payload);
+      console.log(request.payload[i]._id);
+      Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
+        if(err)
+          console.log(err);
+        });
+    }
+  }
+}
+
+
+
+/*
+exports.setAvatar = {
+  auth: false,
+
+  payload: {
+    output: 'stream',
+    parse: true,
+    allow: 'multipart/form-data'
+},
+
+  handler: function (request, reply) {
+    var form = new multiparty.Form();
+    console.log('---');
+    debugger;
+    console.log(util.inspect(request.payload, { showHidden: true, depth: 100 }));
+    console.log(request.payload.file);
+    
+    
+    form.parse(request, function(err, fields, files) {
+        if (err) return reply(err);
+        else upload(files, reply);
+    });
+    
+    
+  },
+}
+*/
+
