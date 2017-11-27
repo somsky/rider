@@ -2,17 +2,19 @@ import {inject, Aurelia} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import {LoginStatus} from './services/messages';
 import RiderService from './services/riderService';
+import loggedInUser from './services/loggedInUser';
 
-@inject(Aurelia, EventAggregator, RiderService)
+@inject(Aurelia, EventAggregator, RiderService, loggedInUser)
 export class App {
 
   loggedIn = false;
   showSignup = true;
   
-  constructor(au, ea, rs) {
+  constructor(au, ea, rs, lu) {
     this.au = au;
     this.ea = ea;
     this.riderService = rs;
+    this.loggedInUser = lu;
 
     /* the specified callback in subscribe gets called as soon as a new LoginStatus
       gets published */

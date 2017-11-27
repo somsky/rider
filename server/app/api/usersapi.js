@@ -26,7 +26,7 @@ exports.authenticate = {
     User.findOne({ email: user.email }).then(foundUser => {
       if (foundUser && foundUser.password === user.password) {
         const token = utils.createToken(foundUser);
-        reply({ success: true, token: token }).code(201);
+        reply({ success: true, token: token, user: foundUser }).code(201);                           //added user object
       } else {
         reply({ success: false, message: 'Authentication failed. User not found.' }).code(201);
       }
@@ -59,6 +59,53 @@ exports.postTweet = {
 
   }
 
+}
+
+exports.getTweetsForUser = {
+  
+  auth: {
+    strategy: 'jwt',
+  },
+  
+  handler: function(request, reply) {
+    const reqId = request.params.id.substring(1, request.params.id.length);
+    console.log(reqId);
+    Tweet.find({userId: reqId}).populate('userId').then( foundTweets => {
+      reply(foundTweets);
+    });
+  }
+}
+
+exports.getUser = {
+
+  auth: {
+    strategy: 'jwt',
+  },
+  
+  handler: function(request, reply) {
+    const reqId = request.params.id.substring(1, request.params.id.length);
+    console.log(reqId);
+    User.findOne({_id: reqId}).then( foundUser => {
+      reply(foundUser);
+    })
+  }
+}
+
+exports.getUserList = {
+  
+  auth: {
+    strategy: 'jwt',
+  },
+
+  handler: function(request, reply) {
+    User.find({}).then( userList => {
+      //for(let i = 0; i < userList.length; i++){
+      //  userList[i].password = '';
+      //}
+      console.log(userList);
+      reply(userList);
+    });
+  }
 }
 
 exports.getAllTweets = {
@@ -202,7 +249,6 @@ exports.deleteTweets = {
   },
 
   handler: function (request, reply) {
-    console.log('called');
     for (let i = 0; i < request.payload.length; i++){
       console.log(request.payload);
       console.log(request.payload[i]._id);
@@ -211,6 +257,39 @@ exports.deleteTweets = {
           console.log(err);
         });
     }
+  }
+}
+
+exports.addFriend = {
+
+  auth: {
+    strategy: 'jwt',
+  },
+
+  handler: function(request, reply) {
+    User.findOne({_id: request.auth.credentials.id}).then( user => {
+      user.friends.push(request.payload);
+      user.save();
+    });
+  }
+}
+
+exports.removeFriend = {
+
+  auth: {
+    strategy: 'jwt',
+  },
+
+  handler: function (request, reply) {
+    console.log('in remove' + request.auth.credentials.id);
+    User.findOne({_id: request.auth.credentials.id}).then( user => {
+      userFriends = user.friends;
+      indexToDelete = userFriends.indexOf(request.params.id);
+      if (indexToDelete > -1)
+        userFriends.splice(indexToDelete, 1);
+      user.friends = userFriends;
+      user.save();
+    });
   }
 }
 

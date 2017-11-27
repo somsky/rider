@@ -1,0 +1,6 @@
+<template>
+    <require from="./entry"></require>
+        <div>
+            <entry repeat.for='entry of entries' entry.bind='entry' view-profile-function.call="viewProfile(entry)"></entry>
+        </div>
+</template>

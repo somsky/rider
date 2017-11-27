@@ -14,7 +14,8 @@ export class Home {
       { route: 'timeline_friends', name: 'timeline_friends', moduleId: 'viewmodels/timeline_friends/timeline_friends', nav: true, title: 'timeline_friends' },
       { route: 'settings', name: 'settings', moduleId: 'viewmodels/settings/settings', nav: true, title: 'settings' },
       { route: 'profile', name: 'profile', moduleId: 'viewmodels/profile/profile', nav: true, title: 'profile' },
-      //{ route: 'logout', name: 'logout', moduleId: 'viewmodels/logout/logout', nav: true, title: 'Logout' }
+      { route: 'userView', name: 'userView', moduleId: 'viewmodels/userView/userView', nav: true, title: 'userView' },
+      { route: 'userProfile/:id', name: 'userProfile', moduleId: 'viewmodels/userProfile/userProfile', title: 'userProfile' }
     ]);
     this.router = router;
     

@@ -1,0 +1,34 @@
+<template>
+    <div class="ui two column grid">
+        <div class="six wide column">
+            <section>
+                <h3>Username: ${user.userName}</h3> <br>
+                name: ${user.firstName} ${user.lastName} <br>
+                <button if.bind="!userIsFriend" click.trigger='addFriend()'>add friend</button>
+                <button if.bind="userIsFriend" click.trigger='removeFriend()'>remove friend</button>
+            </section>
+        </div>
+        <div class="ten wide column">
+            <div repeat.for="tweet of tweets">
+                <div class="ui card center top-margin">
+                    <div class="content">
+                        <div class="header">@${tweet.userId.userName} wrote</div>
+                        <div class="meta">
+                            <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>${tweet.text}</p>
+                    </div>
+                    <div class="extra content">
+                        <p>${tweet.time}</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+</template>
+
+

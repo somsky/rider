@@ -129,6 +129,23 @@ export default class RiderService {
     return this.ac.get('/api/users/getFriendsTweets');
   }
   
+  getUserList() {
+    return this.ac.get('api/users/getUserList');
+  }
 
+  getUser(id) {
+    return this.ac.get('api/users/getUser/' + id);
+  }
 
+  getTweetsForUser(id) {
+    return this.ac.get('/api/users/getTweetsForUser/' + id);
+  }
+
+  addFriend(id) {
+    return this.ac.post('/api/users/addFriend', id);
+  }
+
+  removeFriend(id) {
+    return this.ac.delete('/api/users/removeFriend/' + id);
+  }
 }
