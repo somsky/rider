@@ -26,9 +26,9 @@ exports.authenticate = {
     User.findOne({ email: user.email }).then(foundUser => {
       if (foundUser && foundUser.password === user.password) {
         const token = utils.createToken(foundUser);
-        reply({ success: true, token: token, user: foundUser }).code(201);                           //added user object
+        reply({ success: true, token: token, user: foundUser }).code(200);                           //added user object
       } else {
-        reply({ success: false, message: 'Authentication failed. User not found.' }).code(201);
+        reply({ success: false, message: 'Authentication failed. User not found.' }).code(404);
       }
     }).catch(err => {
       reply(Boom.notFound('internal db failure'));
@@ -50,16 +50,20 @@ exports.postTweet = {
     };
     
     const tweet = new Tweet(contents);
-    tweet.save().then(newTweet => {
-      reply(newTweet).code(201);
-    }).catch(err => {
-      //reply(Boom.badImplementation('error creating candidate'));
-      console.log('db error ' + err);
-    });
+    if (tweet.text.length <= 140) { 
+      tweet.save().then(newTweet => {
+        reply(newTweet).code(201);
+      }).catch(err => {
+        reply(Boom.notFound('internal db failure'));
+      });
+    }
+    else {
+      reply(Boom.badRequest('exceeded maximum tweet length'));
+    }
 
   }
 
-}
+};
 
 exports.getTweetsForUser = {
   
@@ -71,10 +75,12 @@ exports.getTweetsForUser = {
     const reqId = request.params.id.substring(1, request.params.id.length);
     console.log(reqId);
     Tweet.find({userId: reqId}).populate('userId').then( foundTweets => {
-      reply(foundTweets);
+      reply(foundTweets).code(201);
+    }).catch(err => {
+      reply(Boom.notFound(`tweet dosn't exist`));
     });
   }
-}
+};
 
 exports.getUser = {
 
@@ -86,10 +92,12 @@ exports.getUser = {
     const reqId = request.params.id.substring(1, request.params.id.length);
     console.log(reqId);
     User.findOne({_id: reqId}).then( foundUser => {
-      reply(foundUser);
-    })
+      reply(foundUser).code(200);
+    }).catch(err => {
+      reply(Boom.notFound(`tweet dosn't exist`));
+    });
   }
-}
+};
 
 exports.getUserList = {
   
@@ -99,14 +107,12 @@ exports.getUserList = {
 
   handler: function(request, reply) {
     User.find({}).then( userList => {
-      //for(let i = 0; i < userList.length; i++){
-      //  userList[i].password = '';
-      //}
-      console.log(userList);
-      reply(userList);
-    });
+      reply(userList).code(200);
+    }).catch (err => {
+      reply(Boom.notFound('No users found'));
+      })
   }
-}
+};
 
 exports.getAllTweets = {
 
@@ -117,11 +123,13 @@ exports.getAllTweets = {
   handler: function(request, reply) {
     
     Tweet.find({}).sort({date:-1}).populate('userId').then( tweets => {
-      reply(tweets);
-    });
+      reply(tweets).code(200);
+    }).catch(err => {
+          reply(Boom.notFound('No tweets found'));
+  });
     
   }
-}
+};
 
 exports.getProfile = {
 
@@ -130,17 +138,15 @@ exports.getProfile = {
   },
 
   handler: function(request, reply) {
-    console.log('2got request');
     Tweet.find({userId: request.auth.credentials.id}).sort({date: -1})
         .populate('userId').then(tweets => {
-          console.log(tweets);
-          reply(tweets);
+          reply(tweets).code(200);
     }).catch(err => {
-      console.log(err);
+      reply(Boom.badRequest('Unable to query profile'));
     });
   }
 
-}
+};
 
 exports.getFriendsTweets = {
 
@@ -153,12 +159,13 @@ exports.getFriendsTweets = {
     User.findOne({ _id: request.auth.credentials.id }).then (user => {
       Tweet.find({ 'userId': { $in: user.friends } }).populate('userId')
         .then(tweets => {
-          console.log(tweets);
-          reply(tweets);
-        });
+          reply(tweets).code(200);
+        }).catch ( err => {
+          reply(Boom.notFound('Unable to find tweets for specified user'));
+      })
     });
   }
-}
+};
 
 exports.getSettings = {
   
@@ -167,9 +174,9 @@ exports.getSettings = {
   },
 
   handler: function (request, reply) {
-    var userId = request.auth.credentials.id;
+    let userId = request.auth.credentials.id;
     User.findOne({ _id: userId }).then(foundUser => {
-      reply(foundUser);
+      reply(foundUser).code(200);
     }).catch(err => {
       console.log('error getting user information: ' + err);
     });
@@ -184,7 +191,7 @@ exports.getSettings = {
       payload: userValidationSchema,
   
       failAction: function (request, reply, source, error) {
-        console.log('error validating: ' + error);
+        reply(Boom.badRequest('wrong data format'));
       },
       
     },
@@ -200,14 +207,15 @@ exports.getSettings = {
         return user.save();
       }).then(updatedUser => {
         console.log(updatedUser);
-        reply(updatedUser).code(201);;
+        reply(updatedUser).code(201);
       }).catch( err => {
-        console.log(err);
-    })},
+        reply(Boom.notFound('internal db failure'));
+      });
+    },
   
   };
 
-/*
+/* TODO
 exports.logout = {
   auth: false,
   handler: function (request, reply) {
@@ -219,46 +227,48 @@ exports.logout = {
 */
 
 exports.register = {
+
   auth: false,
+
   validate: {
 
     payload: userValidationSchema,
 
     failAction: function (request, reply, source, error) {
-      reply("register: validation error");
+      reply(Boom.badRequest('wrong data format'));
     },
 
   },
+
   handler: function (request, reply) {
     const user = new User(request.payload);
 
     user.save().then(newUser => {
-      reply(user).code(201);;
-      console.log('User successfully registered:' + user);
+      reply(user).code(201);
     }).catch(err => {
-      reply("register database error").code(201);;
-      console.log('error registering user ' + user);
+        Boom.notFound('internal db failure');
     });
   },
 
 };
 
 exports.deleteTweets = {
+
   auth: {
     strategy: 'jwt',
   },
 
   handler: function (request, reply) {
     for (let i = 0; i < request.payload.length; i++){
-      console.log(request.payload);
-      console.log(request.payload[i]._id);
       Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
         if(err)
-          console.log(err);
+            reply(Boom.notFound('internal db failure'));
+        else
+          reply('tweet ${request.payload[i]._id} deleted').code(200);
         });
     }
   }
-}
+};
 
 exports.addFriend = {
 
@@ -267,12 +277,18 @@ exports.addFriend = {
   },
 
   handler: function(request, reply) {
-    User.findOne({_id: request.auth.credentials.id}).then( user => {
+    User.findOne({_id: request.auth.credentials.id}).then(user => {
       user.friends.push(request.payload);
-      user.save();
+      user.save().then(newFriend => {
+          reply(newFriend).code(201);
+      }).catch(err => {
+          reply(Boom.badImplementation('internal db failure'));
+      });
+    }).catch(err => {
+        reply(Boom.badImplementation('internal db failure'));
     });
   }
-}
+};
 
 exports.removeFriend = {
 
@@ -281,17 +297,20 @@ exports.removeFriend = {
   },
 
   handler: function (request, reply) {
-    console.log('in remove' + request.auth.credentials.id);
     User.findOne({_id: request.auth.credentials.id}).then( user => {
       userFriends = user.friends;
       indexToDelete = userFriends.indexOf(request.params.id);
       if (indexToDelete > -1)
         userFriends.splice(indexToDelete, 1);
       user.friends = userFriends;
-      user.save();
+      user.save().then (removedFriend => {
+          reply('friend deleted').code(200);
+      });
+    }).catch( err => {
+      reply(Boom.notFound('internal db failure'));
     });
   }
-}
+};
 
 
 
@@ -322,4 +341,3 @@ exports.setAvatar = {
   },
 }
 */
-

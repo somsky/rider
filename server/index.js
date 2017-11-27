@@ -6,8 +6,7 @@ const utils = require('./app/api/utils.js');
 //const fs = require('fs');
 
 var server = new Hapi.Server();
-server.connection({ port: process.env
-  .PORT || 4000 });
+server.connection({ port: process.env.PORT || 4000 });
 
 require('./app/models/db');
 
