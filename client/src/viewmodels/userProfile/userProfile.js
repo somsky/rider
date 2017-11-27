@@ -22,7 +22,7 @@ export class UserProfile {
             this.user = res.content;
         }).then (val => {
             for (let i = 0; i < this.loggedInUser.friends.length; i++) {
-                if (this.loggedInUser.friends[i] == this.user._id){
+                if (this.loggedInUser.friends[i]  == this.user._id){
                     this.userIsFriend = true;
                     break;
                 }
@@ -35,20 +35,27 @@ export class UserProfile {
                 this.tweets[i].time = this.tweets[i].time.substring(0, 10) + ', '
                     + this.tweets[i].time.substring(11, 16);
             }
-            //console.log(this.tweets);
         });
 
     }
 
     addFriend(){
-        this.userIsFriend = true;
         this.riderService.addFriend(this.user._id);
+        this.userIsFriend = true;
+        this.loggedInUser.friends.push(this.user);
+        this.lu.setLoggedInUser(this.loggedInUser);
     }
 
     removeFriend() {
-        this.userIsFriend = false;
         this.riderService.removeFriend(this.user._id);
-        //todo: remove friend from local loggedinuser object and from loggedinuser-service-object
+        this.userIsFriend = false;
+        for (let i = 0; i < this.loggedInUser.friends.length; i++) {
+          if (this.loggedInUser.friends[i] === this.user._id) {
+            this.loggedInUser.friends = this.loggedInUser.friends.splice(i, 1);
+            this.lu.setLoggedInUser(this.user);
+            break;
+          }
+        }
     }
   
 }

@@ -19,4 +19,8 @@ export default class LoggedInUser {
     getLoggedInUser(user){
         return this.loggedInUser;
     }
+
+    setLoggedInUser(user) {
+      this.loggedInUser = user;
+    }
 }

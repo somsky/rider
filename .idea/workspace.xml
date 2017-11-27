@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="351a12bd-f25e-4286-9c92-f16b3739c906" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/collection-0--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/collection-92--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/collection-94--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/collection-96--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/collection-98--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/diagnostic.data/metrics.2017-11-27T07-29-30Z-00000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/index-1--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/index-93--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/index-95--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/index-97--2311851273036613276.wt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/db/index-99--2311851273036613276.wt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/server/db/WiredTiger.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/_mdb_catalog.wt" afterPath="$PROJECT_DIR$/server/db/_mdb_catalog.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/diagnostic.data/metrics.interim" afterPath="$PROJECT_DIR$/server/db/diagnostic.data/metrics.interim" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/journal/WiredTigerLog.0000000001" afterPath="$PROJECT_DIR$/server/db/journal/WiredTigerLog.0000000001" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/server/db/sizeStorer.wt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/loggedInUser.js" afterPath="$PROJECT_DIR$/client/src/services/loggedInUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js" afterPath="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/.idea/workspace.xml" afterPath="$PROJECT_DIR$/server/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/server/db/WiredTiger.turtle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/mongod.lock" afterPath="$PROJECT_DIR$/server/db/mongod.lock" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="userProfile.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loggedInUser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/services/loggedInUser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="riderService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/services/riderService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>removefrie</find>
+      <find>ea.p</find>
+      <find>===</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/client/src/services/loggedInUser.js" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/client/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="15" />
+    <option name="y" value="27" />
+    <option name="width" value="1890" />
+    <option name="height" value="789" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="viewmodels" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rider" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="viewmodels" type="462c0819:PsiDirectoryNode" />
+              <item name="userProfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.index.js">
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/server">
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+    <configuration name="userProfile.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="userProfile.js" working-dir="$PROJECT_DIR$/client/src/viewmodels/userProfile">
+      <EXTENSION ID="com.jetbrains.nodejs.remote.docker.NodeJSDockerRunConfigurationExtension">
+        <option name="envVars">
+          <list />
+        </option>
+        <option name="extraHosts">
+          <list />
+        </option>
+        <option name="links">
+          <list />
+        </option>
+        <option name="networkDisabled" value="false" />
+        <option name="networkMode" value="bridge" />
+        <option name="portBindings">
+          <list />
+        </option>
+        <option name="publishAllPorts" value="false" />
+        <option name="version" value="1" />
+        <option name="volumeBindings">
+          <list />
+        </option>
+      </EXTENSION>
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.userProfile.js" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.index.js" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.index.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.userProfile.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="351a12bd-f25e-4286-9c92-f16b3739c906" name="Default" comment="" />
+      <created>1511787480680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511787480680</updated>
+      <workItem from="1511787481964" duration="3249000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3249000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="15" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3995749" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/src/main-cli.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/src/main-webpack.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/src/app.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/src/resources/index.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/watch.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-markup-minify-min.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/copy-files.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-postcss.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-sass.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-markup.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/karma.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-css.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-less.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/build.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/run-webpack.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/transpile.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/lint.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-markup-minify-max.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-pug.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/process-stylus.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/jest.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/run.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/test.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/build-webpack.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/tasks/environment.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/content/karma.conf.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/element.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/component.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/binding-behavior.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/attribute.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/task.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/value-converter.js" />
+        <option value="$PROJECT_DIR$/client/node_modules/aurelia-cli/lib/resources/generators/generator.js" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/client/src/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="309" column="16" lean-forward="false" selection-start-line="309" selection-start-column="16" selection-end-line="309" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/riderService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="49" column="46" lean-forward="false" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/services/loggedInUser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="45" column="49" lean-forward="false" selection-start-line="45" selection-start-column="49" selection-end-line="45" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
