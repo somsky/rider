@@ -1,31 +1,42 @@
 <template>
-        <style type="text/css">
-            .center {
-                margin: 0 auto !important;
-            }
-    
-            .top-margin {
-                margin-top: 1em !important;
-            }
-        </style>
-    
-        <div repeat.for="tweet of tweets" class="center">
-                <div class="ui card center top-margin">
-                    <div class="content">
-                        <div class="header">@${tweet.userId.userName} wrote</div>
-                        <div class="meta">
-                            <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <p>${tweet.text}</p>
-                    </div>
-                    <div class="extra content">
-                        <p>${tweet.time}</p>
-                    </div>
+  <br>
+  <div class="ui two column grid">
+    <div class="row">
+      <div class="ui center aligned column">
+        <button click.delegate="deleteSelectedTweets()">delete selected tweets</button>
+        <section>
+          <h1>Username: ${loggedInUser.userName}</h1> <br>
+          <h2>name: ${loggedInUser.firstName} ${loggedInUser.lastName}<h2> <br>
+        </section>
+      </div>
+      <div class="ui center aligned column">
+        <div class="ten wide column">
+          <div repeat.for="tweet of tweets">
+            <div class="ui card center top-margin">
+              <div class="content">
+                <div class="header">@${tweet.userId.userName} wrote</div>
+                <div class="meta">
+                  <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
                 </div>
-                <br>
-                <br>
+              </div>
+              <div class="content">
+                <p>${tweet.text}</p>
+              </div>
+              <div class="extra content">
+                <p>${tweet.time}</p>
+                <Label>Select </Label>
+                <input type="checkbox" checked.bind="tweet.isSelected">
+              </div>
             </div>
-    
-    </template>
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</template>
+
+

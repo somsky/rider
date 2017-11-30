@@ -148,4 +148,10 @@ export default class RiderService {
   removeFriend(id) {
     return this.ac.delete('/api/users/removeFriend/' + id);
   }
+
+  /* delete tweets can only delete tweet of the currently logged in user.
+   * User identity is determined bye the json web token. */
+  deleteTweets(tweetsToDelete) {
+    this.ac.post('/api/users/deleteTweets', tweetsToDelete);
+  }
 }
