@@ -5,7 +5,8 @@ export class TotalUpdate {
 }
 
 export class LoginStatus {
-  constructor(status) {
+  constructor(status, type) {
     this.status = status;
+    this.type = type;
   }
 }

@@ -9,6 +9,7 @@ const userSchema = mongoose.Schema({
   friends: [String],
   email: String,
   password: String,
+    isAdmin: Boolean,
   avatar: { data: Buffer, contentType: String }
 });
 

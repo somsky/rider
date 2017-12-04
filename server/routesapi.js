@@ -23,5 +23,7 @@ module.exports = [
   /* friends handling */
   { method: 'POST', path: '/api/users/addFriend', config: UsersApi.addFriend },
   { method: 'DELETE', path: '/api/users/removeFriend/{id}', config: UsersApi.removeFriend },
+    { method: 'POST', path: '/api/users/adminDeleteTweets', config: UsersApi.adminDeleteTweets },
+    { method: 'POST', path: '/api/users/adminDeleteUsers', config: UsersApi.adminDeleteUsers },
   //{ method: 'POST', path: '/api/users/setAvatar', config: UsersApi.setAvatar }
 ];

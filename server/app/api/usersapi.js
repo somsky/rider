@@ -242,7 +242,7 @@ exports.register = {
 
   handler: function (request, reply) {
     const user = new User(request.payload);
-
+    user.isAdmin = false;
     user.save().then(newUser => {
       reply(user).code(201);
     }).catch(err => {
@@ -268,6 +268,66 @@ exports.deleteTweets = {
         });
     }
   }
+};
+
+exports.adminDeleteTweets = {
+
+    auth: {
+        strategy: 'jwt',
+    },
+
+    handler: function (request, reply) {
+      /*  check if user has admin rights */
+      User.findOne({_id: request.auth.credentials.id}).then(user => {
+            if (user.isAdmin === false)
+              reply.Boom.unauthorized('');
+        }).catch(err => {
+            reply(Boom.badImplementation('internal db failure'));
+        });
+
+      /* remove tweets */
+        for (let i = 0; i < request.payload.length; i++){
+              Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
+                  if(err)
+                      reply(Boom.notFound('internal db failure'));
+                  else
+                      reply('tweet ${request.payload[i]._id} deleted').code(200);
+              });
+          }
+    }
+
+};
+
+exports.adminDeleteUsers = {
+
+  auth: {
+    strategy: 'jwt',
+  },
+
+    handler: function(request, reply) {
+        /*  check if user has admin rights */
+        User.findOne({_id: request.auth.credentials.id}).then(user => {
+            if (user.isAdmin === false)
+                reply.Boom.unauthorized('');
+        }).catch(err => {
+            reply(Boom.badImplementation('internal db failure'));
+        });
+
+        let luserId = [];
+        request.payload.forEach(user => {
+          luserId.push(user._id);
+        });
+
+        /* remove tweets of selected users*/
+        Tweet.deleteMany({'userId': {$in: luserId}}, err => {
+          console.log(err);
+        });
+
+        /* delete user accounts */
+        User.deleteMany({'_id': {$in: luserId}}, err => {
+          console.log(err);
+        });
+    }
 };
 
 exports.addFriend = {

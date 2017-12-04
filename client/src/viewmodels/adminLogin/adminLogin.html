@@ -1,0 +1,13 @@
+<template>
+  <form submit.delegate="login()" class="ui stacked segment form">
+    <h3 class="ui header">admin Log-in</h3>
+    <div class="field">
+      <label>Email</label> <input type="text" value.bind="email"/>
+    </div>
+    <div class="field">
+      <label>Password</label> <input type="password" value.bind="password"/>
+    </div>
+
+    <button class="ui blue submit button">Login</button>
+  </form>
+</template>

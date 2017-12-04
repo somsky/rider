@@ -71,18 +71,12 @@ export default class RiderService {
     this.ac.post('/api/users/register', newUser);
   }
 
-  login(email, password) {
+  login(email, password, type) {
     const user = {
       email: email,
       password: password
     };
-    console.log('Authenticating ' + email + ' ' + password);
-    this.ac.authenticate('/api/users/authenticate', user);
-    const status = {
-      success: true,
-      message: ''
-    };
-    this.ea.publish(new LoginStatus(status));
+    this.ac.authenticate('/api/users/authenticate', user, type);
   }
 
   logout() {
@@ -153,5 +147,13 @@ export default class RiderService {
    * User identity is determined bye the json web token. */
   deleteTweets(tweetsToDelete) {
     this.ac.post('/api/users/deleteTweets', tweetsToDelete);
+  }
+
+  adminDeleteTweets(tweetsToDelete) {
+    this.ac.post('/api/users/adminDeleteTweets', tweetsToDelete);
+  }
+
+  adminDeleteUsers(usersToDelete) {
+    this.ac.post('/api/users/adminDeleteUsers', usersToDelete);
   }
 }

@@ -31,7 +31,7 @@ export default class AsyncHttpClient {
     return this.http.delete(url);
   }
 
-  authenticate(url, user) {
+  authenticate(url, user, type) {
     this.http.post(url, user).then(response => {
       const status = response.content;
       if (status.success) {
@@ -41,7 +41,8 @@ export default class AsyncHttpClient {
           configuration.withHeader('Authorization', 'bearer ' + response.content.token);
         });
       }
-      this.ea.publish(new LoginStatus(status));
+      this.ea.publish(new LoginStatus(status, type));
+
     }).catch(error => {
       const status = {
         success: false,

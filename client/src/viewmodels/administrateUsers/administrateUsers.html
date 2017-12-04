@@ -1,0 +1,16 @@
+<template>
+
+  <require from="./entry"></require>
+
+  <div class="ui grid">
+    <div class="row">
+      <div class="column">
+        <button class="ui button" click.trigger="deleteSelectedUsers()">Delete selected Users</button>
+      </div>
+      <div class="ten wide column">
+        <entry repeat.for='entry of entries' entry.bind='entry' view-profile-function.call="viewProfile(entry)"></entry>
+      </div>
+    </div>
+  </div>
+
+</template>

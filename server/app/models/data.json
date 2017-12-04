@@ -6,7 +6,8 @@
         "lastName": "Simpson",
         "userName": "Elhomer",
         "email": "homer@simpson.com",
-        "password": "secret"
+        "password": "secret",
+        "isAdmin": false
       },
       "marge": {
         "firstName": "Marge",
@@ -14,14 +15,16 @@
         "userName": "margexD",
         "friends": ["->users.homer"],
         "email": "marge@simpson.com",
-        "password": "secret"
+        "password": "secret",
+        "isAdmin": true
       },
       "bart": {
         "firstName": "Bart",
         "lastName": "Simpson",
         "userName": "Elbarto",
         "email": "bart@simpson.com",
-        "password": "secret"
+        "password": "secret",
+        "isAdmin": false
       }
     },
     "candidates": {

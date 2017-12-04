@@ -49,8 +49,6 @@
           "aurelia-framework",
           "aurelia-history",
           "aurelia-history-browser",
-					"aurelia-http-client",
-					"aurelia-loader",
           "aurelia-loader",
           "aurelia-loader-default",
           "aurelia-logging",
@@ -65,6 +63,9 @@
           "aurelia-task-queue",
           "aurelia-templating",
           "aurelia-templating-binding",
+          "aurelia-history-browser",
+          "aurelia-http-client",
+          "aurelia-loader",
           {
             "name": "aurelia-templating-resources",
             "path": "../node_modules/aurelia-templating-resources/dist/amd",
@@ -120,8 +121,8 @@
     "source": "src/**/*.js"
   },
   "markupProcessor": {
-    "id": "minimum",
-    "displayName": "Minimal Minification",
+    "id": "none",
+    "displayName": "None",
     "fileExtension": ".html",
     "source": "src/**/*.html"
   },

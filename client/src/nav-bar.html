@@ -1,7 +1,7 @@
 <template bindable="router">
   <nav>
-    <div class="ui large inverted tabular menu">
-      <div style="white-space:nowrap" repeat.for="row of router.navigation">
+    <div  class="ui large inverted tabular menu">
+      <div style="display:inline" repeat.for="row of router.navigation">
         <a class="item" href.bind="row.href">${row.title}</a>
       </div>
     </div>

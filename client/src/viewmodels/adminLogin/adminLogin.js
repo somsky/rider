@@ -12,17 +12,12 @@ export class Login {
   }
 
   login() {
-    console.log(`Trying to log in ${this.email}`);
-    var userInfo = {
-      email: this.email,
-      password: this.password
-    }
-    
-    this.riderService.login(this.email, this.password, 'reguser');
+    this.riderService.login(this.email, this.password, 'admin');
   }
-
+  /*
   logout(){
     console.log('Trying to log out ${this.email}');
     this.riderService.logout();
   }
+  */
 }
