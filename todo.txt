@@ -1,0 +1,21 @@
+_________________________________
+NECESSARY:
+_________________________________
+add social graph
+react to server unavailability
+logout -- DONE
+admin-logout -- DONE
+_________________________________
+NICE TO HAVE:
+_________________________________
+
+statistics
+image support
+__________________________________
+BUGFIXES:
+_________________________________
+fix navigation-bar bug in admin-view
+hide own profile in userView
+hide own profile in admin-user-view
+fix friends-tweets-view
+limit tweet length to 140 characters

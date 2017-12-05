@@ -19,7 +19,7 @@ export class App {
     /* navigate to protected routes depending on authentication success */
 
     ea.subscribe(LoginStatus, msg => {
-
+      this.router.navigate('/', { replace: true, trigger: false });
       if (msg.status.success === true) {
 
         if(msg.type === 'reguser') {
@@ -28,7 +28,6 @@ export class App {
           });
         }
         else if (msg.type === 'admin') {
-          this.router.navigate('/', { replace: true, trigger: false });
           au.setRoot('admin').then(() => {
             this.router.navigateToRoute('administrateTweets');
           });
@@ -56,4 +55,5 @@ export class App {
     });
     this.router = router;
   }
+
 }

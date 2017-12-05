@@ -1,0 +1,11 @@
+<template bindable="router, logout">
+  <nav>
+    <div  class="ui large inverted tabular menu">
+      <div style="display:inline" repeat.for="row of router.navigation">
+        <a class="item" href.bind="row.href">${row.title}</a>
+      </div>
+      <button click.trigger="logout()" class="ui inverted button" style="display:inline; float:right">logout</button>
+    </div>
+  </nav>
+</template>
+

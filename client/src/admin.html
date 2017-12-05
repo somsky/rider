@@ -7,9 +7,9 @@
   <script src="semantic/dist/semantic.min.js"></script>
   <!--link rel="stylesheet" type="text/css" href="src/style.css"-->
 
-  <require from="nav-bar.html"></require>
+  <require from="userspace-nav-bar.html"></require>
   <div class="ui container page-host body-margin">
-    <nav-bar router.bind="router"></nav-bar>
+    <userspace-nav-bar router.bind="router" logout.call="logout()"></userspace-nav-bar>
     <router-view></router-view>
   </div>
 </template>

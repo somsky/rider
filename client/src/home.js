@@ -1,10 +1,18 @@
 import { inject, Aurelia } from 'aurelia-framework';
+import RiderService from 'services/riderService';
 
-@inject(Aurelia)
+@inject(Aurelia, RiderService)
 export class Home {
 
-  constructor(au) {
+  constructor(au, rs) {
     this.aurelia = au;
+    this.riderService = rs;
+  }
+
+  logout(){
+    this.riderService.logout();
+    console.log('logout pressed');
+    return true;
   }
 
   configureRouter(config, router) {
@@ -20,4 +28,7 @@ export class Home {
     this.router = router;
     
   }
+
+
+
 }
