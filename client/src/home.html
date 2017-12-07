@@ -10,6 +10,16 @@
     <require from="userspace-nav-bar.html"></require>
     <div class="ui container page-host body-margin">
         <userspace-nav-bar router.bind="router" logout.call="logout()"></userspace-nav-bar>
+        <div if.bind="errorMsg" class="ui negative message transition">
+          <div class="header">
+            ${errorMsg}
+          </div>
+        </div>
+        <div if.bind="successMsg" class="ui positive message transition">
+          <div class="header">
+            ${successMsg}
+          </div>
+        </div>
         <router-view></router-view>
     </div>
 </template>

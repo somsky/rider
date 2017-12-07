@@ -1,6 +1,7 @@
 import {inject} from 'aurelia-framework';
 import RiderService from '../../services/riderService';
 
+
 @inject(RiderService)
 export class TweetEditor {
 

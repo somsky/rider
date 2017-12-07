@@ -1,17 +1,31 @@
 import { inject, Aurelia } from 'aurelia-framework';
 import RiderService from 'services/riderService';
+import {EventAggregator} from 'aurelia-event-aggregator'
+import {ServerResponseStatus} from 'services/messages';
 
-@inject(Aurelia, RiderService)
+@inject(Aurelia, RiderService, EventAggregator)
 export class Home {
 
-  constructor(au, rs) {
+  constructor(au, rs, ea) {
     this.aurelia = au;
     this.riderService = rs;
+    this.ea = ea;
+    this.errorMsg = null;
+    this.successMsg = null;
+    this.ea.subscribe(ServerResponseStatus, msg => {
+      if(!msg.status.success) {
+        this.errorMsg = msg.status.message;
+        this.successMsg = null;
+      }
+      else {
+        this.successMsg = msg.status.message;
+        this.errorMsg = null;
+      }
+    });
   }
 
   logout(){
     this.riderService.logout();
-    console.log('logout pressed');
     return true;
   }
 

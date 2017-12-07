@@ -1,20 +1,13 @@
 import {inject} from 'aurelia-framework';
 import Fixtures from './fixtures';
-import {TotalUpdate, LoginStatus} from './messages';
+import {LoginStatus, ServerResponseStatus} from './messages';
 import {EventAggregator} from 'aurelia-event-aggregator';
 import AsyncHttpClient from './async-http-client';
 
-/* commnication service to the rider backend */
+/* communication service to the rider backend */
 
 @inject(Fixtures, EventAggregator, AsyncHttpClient)
 export default class RiderService {
-
-  donations = [];
-  methods = [];
-  candidates = [];
-  users = [];
-  total = 0;
-
 
   constructor(data, ea, ac) {
     this.methods = data.methods;
@@ -55,7 +48,7 @@ export default class RiderService {
       message: ''
     };
     this.ac.clearAuthentication();
-    this.ea.publish(new LoginStatus(status, 'none'));
+    this.ea.publish(new LoginStatus(status, 'logout'));
   }
   
   getSettings(){
@@ -80,9 +73,21 @@ export default class RiderService {
   postTweet(text){
     const tweet = {
       text: text,
-    }
+    };
     //console.log('posting a tweet ' + text);
-    this.ac.post('/api/users/postTweet', tweet);
+    this.ac.post('/api/users/postTweet', tweet).then(response => {
+      let status = {
+        success: true,
+        message: 'tweet successfully published.',
+      };
+      this.ea.publish(new ServerResponseStatus(status));
+    }).catch(response => {
+      let status = {
+        success: false,
+        message: 'error publishing tweet.',
+      };
+      this.ea.publish(new ServerResponseStatus(status));
+    });
   }  
     
   getGlobalTweets(){
