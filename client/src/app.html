@@ -19,14 +19,17 @@
         </div>
       </section>
 
+      <div if.bind="error" class="ui negative message transition">
+        <div class="header">
+          ${error}
+        </div>
+      </div>
+
       <require from="nav-bar.html"></require>
       <div class="ui container page-host">
         <nav-bar router.bind="router"></nav-bar>
         <router-view></router-view>
       </div>
-
-
-
 
       <div class="ui stacked grid segment">
 

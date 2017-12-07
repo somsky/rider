@@ -6,12 +6,19 @@ export class Signup {
 
   firstName = 'Paul';
   lastName = 'Panther';
-  userName = 'PauliP'
+  userName = 'PauliP';
   email = 'Paul@Panther.com';
   password = 'secret';
 
   constructor(rs) {
     this.riderService = rs;
+    //this.ea = ea;
+    /*ea.subscribe(LoginStatus, msg => {
+      this.error = msg.status.message;
+      if (!msg.status.success){
+        this.error = msg.status.message;
+      }
+    });*/
   }
 
   register() {

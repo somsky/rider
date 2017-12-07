@@ -19,7 +19,7 @@ export class App {
     /* navigate to protected routes depending on authentication success */
 
     ea.subscribe(LoginStatus, msg => {
-      this.router.navigate('/', { replace: true, trigger: false });
+      //this.router.navigate('/', { replace: true, trigger: false });
       if (msg.status.success === true) {
 
         if(msg.type === 'reguser') {
@@ -33,10 +33,11 @@ export class App {
           });
         }
 
-      } else {
-        au.setRoot('app').then(() => {
-          this.router.navigateToRoute('login');
-        });
+      } else if (!msg.status.success) {
+        this.error = msg.status.message;
+        //au.setRoot('app').then(() => {
+        //  this.router.navigateToRoute('login');
+        //});
       }
 
     });

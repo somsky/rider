@@ -23,41 +23,11 @@ export default class RiderService {
     //this.getCandidates();
   }
 
-  getCandidates() {
-    this.ac.get('/api/candidates').then(res => {
-      this.candidates = res.content;
-      console.log(this.candidates);
-    });
-  }
-
   getUsers() {
     this.ac.get('/api/users').then(res => {
       this.users = res.content;
       console.log(this.users);
     });
-  }
-
-  donate(amount, method, candidate) {
-    const donation = {
-      amount: amount,
-      method: method,
-      candidate: candidate
-    };
-    this.donations.push(donation);
-    console.log(amount + ' donated to ' + candidate.firstName + ' ' + candidate.lastName + ': ' + method);
-
-    this.total = this.total + parseInt(amount, 10);
-    console.log('Total so far ' + this.total);
-    this.ea.publish(new TotalUpdate(this.total));
-  }
-
-  addCandidate(firstName, lastName, office) {
-    const candidate = {
-      firstName: firstName,
-      lastName: lastName,
-      office: office
-    };
-    this.candidates.push(candidate);
   }
 
   register(firstName, lastName, userName, email, password) {
@@ -85,7 +55,7 @@ export default class RiderService {
       message: ''
     };
     this.ac.clearAuthentication();
-    this.ea.publish(new LoginStatus(status));
+    this.ea.publish(new LoginStatus(status, 'none'));
   }
   
   getSettings(){

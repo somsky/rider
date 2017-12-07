@@ -43,12 +43,21 @@ export default class AsyncHttpClient {
       }
       this.ea.publish(new LoginStatus(status, type));
 
-    }).catch(error => {
-      const status = {
-        success: false,
-        message: 'service not avilable'
-      };
-      this.ea.publish(new LoginStatus(status));
+    }).catch(comm => {
+      let status;
+      if (comm.responseType === 'error' && comm.statusCode === 0){
+        status = {
+          success: false,
+          message: 'service currently unavailable. Please try again later.',
+        };
+      }
+      else {
+        status = {
+          success: false,
+          message: error.statusText,
+        };
+      }
+      this.ea.publish(new LoginStatus(status, 'error'));
     });
   }
 

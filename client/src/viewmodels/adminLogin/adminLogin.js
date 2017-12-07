@@ -1,5 +1,6 @@
 import {inject} from 'aurelia-framework';
 import RiderService from '../../services/riderService';
+//import EventAggregator from 'aurelia-event-aggregator';
 
 @inject(RiderService)
 export class Login {
@@ -9,6 +10,13 @@ export class Login {
 
   constructor(rs) {
     this.riderService = rs;
+    //this.ea = ea;
+    /*ea.subscribe(LoginStatus, msg => {
+      this.error = msg.status.message;
+      if (!msg.status.success){
+        this.error = msg.status.message;
+      }
+    });*/
   }
 
   login() {
