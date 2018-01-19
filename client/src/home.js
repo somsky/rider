@@ -18,7 +18,6 @@ export class Home {
         this.successMsg = null;
       }
       else {
-        this.successMsg = msg.status.message;
         this.errorMsg = null;
       }
     });

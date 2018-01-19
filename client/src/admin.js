@@ -12,7 +12,7 @@ export class Home {
   configureRouter(config, router) {
     config.map([
       { route: ['', 'administrateTweets'], name: 'administrateTweets', moduleId: 'viewmodels/administrateTweets/administrateTweets', nav: true, title: 'administrateTweets' },
-      { route: ['', 'administrateUsers'], name: 'administrateUsers', moduleId: 'viewmodels/administrateUsers/administrateUsers', nav: true, title: 'administrateUsers' },
+      { route: ['administrateUsers'], name: 'administrateUsers', moduleId: 'viewmodels/administrateUsers/administrateUsers', nav: true, title: 'administrateUsers' },
     ]);
     config.mapUnknownRoutes(instruction => {
       return '';

@@ -82,10 +82,21 @@ export default class RiderService {
       };
       this.ea.publish(new ServerResponseStatus(status));
     }).catch(response => {
-      let status = {
-        success: false,
-        message: 'error publishing tweet.',
-      };
+      /* detect server unavailability */
+      let status = null;
+      if(response.responseType === 'error' && response.statusCode === 0){
+        status = {
+          success: false,
+          message: 'Server currently unavailable. Please try again later.',
+        };
+      }
+      /* detect other errors */
+      else {
+        status = {
+          success: false,
+          message: 'error publishing tweet.',
+        };
+      }
       this.ea.publish(new ServerResponseStatus(status));
     });
   }  

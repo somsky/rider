@@ -2,20 +2,25 @@ _________________________________
 NECESSARY:
 _________________________________
 add social graph
-react to server unavailability
+statistics
+react to server unavailability -- DONE
 logout -- DONE
 admin-logout -- DONE
+
+DEPLOYMENT ON HEROKU
 _________________________________
 NICE TO HAVE:
 _________________________________
 
-statistics
 image support
+
+
 __________________________________
-BUGFIXES:
+
+BUGFIXES: -- DONE
 _________________________________
-fix navigation-bar bug in admin-view
-hide own profile in userView
-hide own profile in admin-user-view
-fix friends-tweets-view
-limit tweet length to 140 characters
+fix navigation-bar bug in admin-view -- DONE
+hide own profile in userView -- DONE
+hide own profile in admin-user-view -- DONE
+fix friends-tweets-view -- DONE
+limit tweet length to 140 characters -- DONE

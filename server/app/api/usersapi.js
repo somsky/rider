@@ -50,16 +50,15 @@ exports.postTweet = {
     };
     
     const tweet = new Tweet(contents);
-    if (tweet.text.length <= 140) { 
-      tweet.save().then(newTweet => {
-        reply(newTweet).code(201);
-      }).catch(err => {
-        reply(Boom.notFound('internal db failure'));
-      });
-    }
-    else {
-      reply(Boom.badRequest('exceeded maximum tweet length'));
-    }
+    if (tweet.text.length > 140)
+      tweet.text = tweet.text.substring(0, 140);
+
+    tweet.save().then(newTweet => {
+      reply(newTweet).code(201);
+    }).catch(err => {
+      reply(Boom.notFound('internal db failure'));
+    });
+
 
   }
 
@@ -99,6 +98,7 @@ exports.getUser = {
   }
 };
 
+/* get a list of all users, excluding the one who makes the request*/
 exports.getUserList = {
   
   auth: {
@@ -106,7 +106,7 @@ exports.getUserList = {
   },
 
   handler: function(request, reply) {
-    User.find({}).then( userList => {
+    User.find({_id : {$ne : request.auth.credentials.id}}).then( userList => {
       reply(userList).code(200);
     }).catch (err => {
       reply(Boom.notFound('No users found'));
@@ -157,7 +157,7 @@ exports.getFriendsTweets = {
   handler: function(request, reply) {
     console.log('got request');
     User.findOne({ _id: request.auth.credentials.id }).then (user => {
-      Tweet.find({ 'userId': { $in: user.friends } }).populate('userId')
+      Tweet.find({ userId : { $in: user.friends } }).populate('userId')
         .then(tweets => {
           reply(tweets).code(200);
         }).catch ( err => {

@@ -21,7 +21,7 @@ export class App {
     ea.subscribe(LoginStatus, msg => {
       this.router.navigate('/', { replace: true, trigger: false });
       if (msg.status.success === true) {
-
+        this.error = null;
         if(msg.type === 'reguser') {
           au.setRoot('home').then(() => {
             this.router.navigateToRoute('tweeteditor');
