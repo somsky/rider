@@ -142,4 +142,9 @@ export default class RiderService {
   adminDeleteUsers(usersToDelete) {
     this.ac.post('/api/users/adminDeleteUsers', usersToDelete);
   }
+
+  getStatistics() {
+    return this.ac.get('/api/users/getStatistics');
+  }
+
 }

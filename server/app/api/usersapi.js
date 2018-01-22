@@ -3,8 +3,6 @@ const User = require('../models/user');
 const Tweet = require('../models/tweet');
 const Joi = require('joi');
 const multiparty = require('multiparty');
-const util = require('util');
-const fs = require('fs');
 
 /* Authenticate sends back a json web token when an email and a matching
     password are provided */
@@ -372,7 +370,23 @@ exports.removeFriend = {
   }
 };
 
+exports.getStatistics = {
 
+  handler: function (request, reply) {
+    let stats = {};
+    let promises = [
+    Tweet.count({}).then ( count => {
+      stats.totalTweets = count;
+    }),
+    User.count({}).then ( count => {
+      stats.totalUsers = count;
+    })];
+    Promise.all(promises).then (values => {
+        reply(stats).code(200);
+    });
+
+  }
+};
 
 /*
 exports.setAvatar = {

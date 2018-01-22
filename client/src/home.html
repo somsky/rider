@@ -8,7 +8,7 @@
     <!--link rel="stylesheet" type="text/css" href="src/style.css"-->
 
     <require from="userspace-nav-bar.html"></require>
-    <div class="ui container page-host body-margin">
+    <div class="ui container page-host" style="margin-left: 15em !important; margin-right:15em !important">
         <userspace-nav-bar router.bind="router" logout.call="logout()"></userspace-nav-bar>
         <div if.bind="errorMsg" class="ui negative message transition">
           <div class="header">

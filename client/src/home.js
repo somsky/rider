@@ -36,7 +36,9 @@ export class Home {
       { route: 'settings', name: 'settings', moduleId: 'viewmodels/settings/settings', nav: true, title: 'settings' },
       { route: 'profile', name: 'profile', moduleId: 'viewmodels/profile/profile', nav: true, title: 'profile' },
       { route: 'userView', name: 'userView', moduleId: 'viewmodels/userView/userView', nav: true, title: 'userView' },
-      { route: 'userProfile/:id', name: 'userProfile', moduleId: 'viewmodels/userProfile/userProfile', title: 'userProfile' }
+      { route: 'userProfile/:id', name: 'userProfile', moduleId: 'viewmodels/userProfile/userProfile', title: 'userProfile' },
+      { route: 'statistics', name: 'statistics', moduleId: 'viewmodels/statistics/statistics', nav: true, title: 'statistics' },
+      { route: 'socialGraph', name: 'socialGraph', moduleId: 'viewmodels/socialGraph/socialGraph', nav: true, title: 'socialGraph' }
     ]);
     this.router = router;
     

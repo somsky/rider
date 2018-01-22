@@ -82,6 +82,10 @@
             "main": "aurelia-testing",
             "env": "dev"
           },
+					{
+						"name": "d3",
+						"path": "../node_modules/d3/build/d3"
+					},
           "text"
         ]
       }

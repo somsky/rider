@@ -5,23 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351a12bd-f25e-4286-9c92-f16b3739c906" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.todo.txt.swp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/WiredTiger.wt" afterPath="$PROJECT_DIR$/server/db/WiredTiger.wt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/_mdb_catalog.wt" afterPath="$PROJECT_DIR$/server/db/_mdb_catalog.wt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/diagnostic.data/metrics.interim" afterPath="$PROJECT_DIR$/server/db/diagnostic.data/metrics.interim" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/sizeStorer.wt" afterPath="$PROJECT_DIR$/server/db/sizeStorer.wt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/admin.js" afterPath="$PROJECT_DIR$/client/src/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/app.js" afterPath="$PROJECT_DIR$/client/src/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/aurelia_project/aurelia.json" afterPath="$PROJECT_DIR$/client/aurelia_project/aurelia.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package-lock.json" afterPath="$PROJECT_DIR$/client/package-lock.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/package.json" afterPath="$PROJECT_DIR$/client/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/home.html" afterPath="$PROJECT_DIR$/client/src/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/home.js" afterPath="$PROJECT_DIR$/client/src/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/services/riderService.js" afterPath="$PROJECT_DIR$/client/src/services/riderService.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/adminLogin/adminLogin.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/adminLogin/adminLogin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/signup/signup.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/signup/signup.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js" afterPath="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/style.css" afterPath="$PROJECT_DIR$/client/src/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/settings/settings.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/settings/settings.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/api/usersapi.js" afterPath="$PROJECT_DIR$/server/app/api/usersapi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/models/data.json" afterPath="$PROJECT_DIR$/server/app/models/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/WiredTiger.turtle" afterPath="$PROJECT_DIR$/server/db/WiredTiger.turtle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/db/mongod.lock" afterPath="$PROJECT_DIR$/server/db/mongod.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/routesapi.js" afterPath="$PROJECT_DIR$/server/routesapi.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/todo.txt" afterPath="$PROJECT_DIR$/todo.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -36,40 +42,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usersapi.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
+      <file leaf-file-name="socialGraph.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="157" column="30" lean-forward="false" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeline_friends.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+            <state relative-caret-position="329">
+              <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="timeline_friends.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
+      <file leaf-file-name="data.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app/models/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="90">
+              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweeteditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js">
+      <file leaf-file-name="userView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userView/userView.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -80,48 +76,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweeteditor.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="111" lean-forward="false" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/admin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="administrateUsers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="riderService.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/services/riderService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="112" column="48" lean-forward="false" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
+            <state relative-caret-position="-1506">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <marker date="1512660660778" expanded="true" signature="956:1028" ph="{...}" />
+                <marker date="1516366967596" expanded="true" signature="956:1028" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="socialGraph.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#svg#0;n#div#0;n#template#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,21 +107,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tweet</find>
-      <find>user.findone</find>
-      <find>amin</find>
-      <find>buton</find>
-      <find>add fr</find>
-      <find>register</find>
-      <find>delete</find>
-      <find>: {</find>
-      <find>$in</find>
-      <find>request.payload._id</find>
       <find>donation</find>
       <find>button</find>
       <find>router</find>
@@ -168,6 +133,16 @@
       <find>_id</find>
       <find>populate</find>
       <find>getfrie</find>
+      <find>let</find>
+      <find>getstat</find>
+      <find>ordinal</find>
+      <find>social</find>
+      <find>ui contain</find>
+      <find>getuser</find>
+      <find>data.json</find>
+      <find>vx</find>
+      <find>.link</find>
+      <find>.id</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,11 +160,9 @@
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html" />
         <option value="$PROJECT_DIR$/server/app/models/user.js" />
-        <option value="$PROJECT_DIR$/server/app/models/data.json" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/userView.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.html" />
-        <option value="$PROJECT_DIR$/server/routesapi.js" />
         <option value="$PROJECT_DIR$/client/src/nav-bar.html" />
         <option value="$PROJECT_DIR$/client/src/userspace-nav-bar.js" />
         <option value="$PROJECT_DIR$/client/src/userspace-nav-bar.html" />
@@ -199,22 +172,34 @@
         <option value="$PROJECT_DIR$/client/src/viewmodels/adminLogin/adminLogin.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/signup/signup.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/login/login.html" />
-        <option value="$PROJECT_DIR$/client/src/app.html" />
         <option value="$PROJECT_DIR$/client/src/services/messages.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/login/login.js" />
-        <option value="$PROJECT_DIR$/client/src/home.html" />
-        <option value="$PROJECT_DIR$/client/src/services/riderService.js" />
         <option value="$PROJECT_DIR$/client/src/app.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/signup/signup.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/adminLogin/adminLogin.html" />
-        <option value="$PROJECT_DIR$/client/src/home.js" />
         <option value="$PROJECT_DIR$/client/src/admin.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html" />
-        <option value="$PROJECT_DIR$/server/app/api/usersapi.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.js" />
+        <option value="$PROJECT_DIR$/client/src/services/riderService.js" />
+        <option value="$PROJECT_DIR$/server/routesapi.js" />
+        <option value="$PROJECT_DIR$/server/app/api/usersapi.js" />
+        <option value="$PROJECT_DIR$/client/src/social_graph/social_graph.js" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/settings/settings.html" />
+        <option value="$PROJECT_DIR$/client/src/social_graph/social_graph.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/social_graph/social_graph.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/social_graph/social_graph.js" />
+        <option value="$PROJECT_DIR$/client/src/home.js" />
+        <option value="$PROJECT_DIR$/client/src/app.html" />
+        <option value="$PROJECT_DIR$/client/src/style.css" />
+        <option value="$PROJECT_DIR$/client/src/home.html" />
+        <option value="$PROJECT_DIR$/server/app/models/data.json" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.js" />
       </list>
     </option>
   </component>
@@ -236,6 +221,7 @@
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="960" />
     <option name="y" value="27" />
     <option name="width" value="960" />
     <option name="height" value="1053" />
@@ -258,90 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Default">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="services" type="cbb8eebc:String" user="services" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
-              <item name="timeline_friends" type="cbb8eebc:String" user="timeline_friends" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="client" type="cbb8eebc:String" user="client" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
-              <item name="tweeteditor" type="cbb8eebc:String" user="tweeteditor" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="server" type="cbb8eebc:String" user="server" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="server" type="cbb8eebc:String" user="server" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="rider" type="cbb8eebc:String" user="rider" />
-              <item name="server" type="cbb8eebc:String" user="server" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-              <item name="api" type="cbb8eebc:String" user="api" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,7 +289,75 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Default">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+              <item name="userView" type="cbb8eebc:String" user="userView" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="server" type="cbb8eebc:String" user="server" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="models" type="cbb8eebc:String" user="models" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -401,6 +372,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/viewmodels" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src/viewmodels/administrateUsers" />
     </key>
@@ -519,11 +493,12 @@
       <workItem from="1512648305862" duration="3307000" />
       <workItem from="1512651915294" duration="8036000" />
       <workItem from="1516357113642" duration="4630000" />
+      <workItem from="1516622428560" duration="12517000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52827000" />
+    <option name="totallyTimeSpent" value="74248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="7" />
@@ -532,19 +507,19 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15242615" sideWeight="0.48988765" order="0" side_tool="false" content_ui="combo" x="182" y="220" width="309" height="860" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15242615" sideWeight="0.51011235" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33146068" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -555,15 +530,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15242615" sideWeight="0.48988765" order="0" side_tool="false" content_ui="combo" x="182" y="220" width="309" height="860" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15242615" sideWeight="0.51011235" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24269663" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30786517" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,7 +550,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="30" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
@@ -583,76 +559,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/semantic/dist/semantic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2070">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/semantic/dist/semantic.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2025">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/SUI/dist/semantic.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/SUI/dist/semantic.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile_backup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="14" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="29" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/services/loggedInUser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="29" lean-forward="false" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#50#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/aurelia_project/aurelia.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -668,23 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/settings/settings.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,21 +608,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="36" lean-forward="false" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/models/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="65" column="24" lean-forward="true" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routesapi.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -770,13 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/node_modules/aurelia-event-aggregator/dist/aurelia-event-aggregator.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -804,9 +675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,25 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="64" column="33" lean-forward="true" selection-start-line="64" selection-start-column="33" selection-end-line="64" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/app.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -850,7 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="55" lean-forward="false" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -886,11 +730,73 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="51" lean-forward="true" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="111" lean-forward="false" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/api/candidatesapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/api/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routesapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="2" lean-forward="false" selection-start-line="30" selection-start-column="2" selection-end-line="30" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/home.js">
+    <entry file="file://$PROJECT_DIR$/client/src/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -900,28 +806,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js">
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/settings/settings.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="54" lean-forward="false" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/settings/settings.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/statistics/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="11" lean-forward="true" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#52#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="52" lean-forward="true" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" lean-forward="true" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="94" column="7" lean-forward="true" selection-start-line="94" selection-start-column="7" selection-end-line="94" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/services/riderService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="112" column="48" lean-forward="false" selection-start-line="112" selection-start-column="48" selection-end-line="112" selection-end-column="48" />
+        <state relative-caret-position="-1506">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <marker date="1512660660778" expanded="true" signature="956:1028" ph="{...}" />
+            <marker date="1516366967596" expanded="true" signature="956:1028" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js">
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userView/userView.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -931,46 +913,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/admin.js">
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#div#0;n#template#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.html">
+    <entry file="file://$PROJECT_DIR$/server/app/models/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="111" lean-forward="false" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
+        <state relative-caret-position="90">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/socialGraph/socialGraph.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="157" column="30" lean-forward="false" selection-start-line="157" selection-start-column="30" selection-end-line="157" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        <state relative-caret-position="329">
+          <caret line="38" column="6" lean-forward="false" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>

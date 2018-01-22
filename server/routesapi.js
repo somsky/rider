@@ -24,6 +24,8 @@ module.exports = [
     /* admin access */
     { method: 'POST', path: '/api/users/adminDeleteTweets', config: UsersApi.adminDeleteTweets },
     { method: 'POST', path: '/api/users/adminDeleteUsers', config: UsersApi.adminDeleteUsers },
+    /* statistics */
+    { method: 'GET', path: '/api/users/getStatistics', config: UsersApi.getStatistics },
     /* image handling */
     //{ method: 'POST', path: '/api/users/setAvatar', config: UsersApi.setAvatar }
 ];

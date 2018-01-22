@@ -1,11 +1,47 @@
 {
     "users": {
       "_model": "User",
+      "Skinner": {
+        "firstName": "Seymour",
+        "lastName": "Skinner",
+        "userName": "TheRealSkinner",
+        "email": "skinner@simpson.com",
+        "password": "secret",
+        "isAdmin": false
+      },
       "homer": {
         "firstName": "Homer",
         "lastName": "Simpson",
         "userName": "Elhomer",
+        "friends": ["->users.Skinner"],
         "email": "homer@simpson.com",
+        "password": "secret",
+        "isAdmin": false
+      },
+      "bart": {
+        "firstName": "Bart",
+        "lastName": "Simpson",
+        "userName": "Elbarto",
+        "friends": ["->users.homer", "->users.Skinner"],
+        "email": "bart@simpson.com",
+        "password": "secret",
+        "isAdmin": false
+      },
+      "Nelson": {
+        "firstName": "Nelson",
+        "lastName": "the bully",
+        "userName": "coolKid",
+        "friends": ["->users.homer", "->users.bart", "->users.Skinner"],
+        "email": "nelson@simpson.com",
+        "password": "secret",
+        "isAdmin": false
+      },
+      "Reverent": {
+        "firstName": "Reverent",
+        "lastName": "Lovejoy",
+        "userName": "loveMan",
+        "friends": ["->users.homer", "->users.bart", "->users.Nelson"],
+        "email": "reverent@simpson.com",
         "password": "secret",
         "isAdmin": false
       },
@@ -13,59 +49,16 @@
         "firstName": "Marge",
         "lastName": "Simpson",
         "userName": "margexD",
-        "friends": ["->users.homer"],
+        "friends": ["->users.homer", "->users.bart", "->users.Skinner", "->users.Reverent"],
         "email": "marge@simpson.com",
         "password": "secret",
         "isAdmin": true
-      },
-      "bart": {
-        "firstName": "Bart",
-        "lastName": "Simpson",
-        "userName": "Elbarto",
-        "email": "bart@simpson.com",
-        "password": "secret",
-        "isAdmin": false
       }
     },
-    "candidates": {
-      "_model": "Candidate",
-      "lisa": {
-        "firstName": "Lisa",
-        "lastName": "Simpson",
-        "office": "President"
-      },
-      "donald": {
-        "firstName": "Donald",
-        "lastName": "Simpson",
-        "office": "President"
-      }
-    },
-    "donations": {
-      "_model": "Donation",
-      "one": {
-        "amount": 40,
-        "method": "paypal",
-        "donor": "->users.bart",
-        "candidate": "->candidates.lisa"
-      },
-      "two": {
-        "amount": 90,
-        "method": "direct",
-        "donor": "->users.marge",
-        "candidate": "->candidates.lisa"
-      },
-      "three": {
-        "amount": 430,
-        "method": "paypal",
-        "donor": "->users.homer",
-        "candidate": "->candidates.donald"
-      }
-    },
-
     "tweets": {
       "_model": "Tweet",
       "tweet_one": {
-        "text": "Hi, I am m a test tweet",
+        "text": "First tweet on this awesome site. So exciting !",
         "userId": "->users.marge"
       },
       "tweet_two": {
@@ -73,17 +66,34 @@
         "userId": "->users.bart"
       },
       "tweet_three": {
-        "text": "starbucks is sooo good !!!!1eleven",
+        "text": "Cup o' tea, cup o' coffe. Stay fresh kids.",
         "userId": "->users.marge"
       },
       "tweet_four": {
-        "text": "Someone got some duff ? This alcoholic right here is running low on fuel.",
+        "text": "Someone got some duff ? I'm running low on fuel.",
         "userId": "->users.homer"
       },
       "tweet_five": {
-        "text": "I'm homer. Is this the internet ?",
-        "userId": "->users.homer"
+        "text": "I love th internet !",
+        "userId": "->users.Reverent"
+      },
+      "tweet_six": {
+        "text": "Tomorrow. 9 o'clock. Church.",
+        "userId": "->users.Reverent"
+      },
+      "tweet_seven": {
+        "text": "I'm using a red arrow, so I can see who I shot.",
+        "userId": "->users.Nelson"
+      },
+      "tweet_eight": {
+        "text": "Someone please accept my friend requests.",
+        "userId": "->users.Skinner"
+      },
+      "tweet_neine": {
+        "text": "I'm really looking forward to finding out who this El Barto is...",
+        "userId": "->users.Skinner"
       }
+
     }
 
   }

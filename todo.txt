@@ -2,7 +2,7 @@ _________________________________
 NECESSARY:
 _________________________________
 add social graph
-statistics
+statistics -- DONE
 react to server unavailability -- DONE
 logout -- DONE
 admin-logout -- DONE
