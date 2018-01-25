@@ -5,7 +5,8 @@
           <button class="ui button" click.trigger="deleteSelectedTweets()">Delete selected tweets</button>
         </div>
         <div class="ten wide column">
-          <div repeat.for="tweet of tweets" & async>
+          
+          <div repeat.for="tweet of tweets" class="center">
             <div class="ui card center top-margin">
               <div class="content">
                 <div class="header">@${tweet.userId.userName} wrote</div>
@@ -13,6 +14,7 @@
                   <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
                 </div>
               </div>
+              <img class="ui centered small image" src=${tweet.imageURL}>
               <div class="content">
                 <p>${tweet.text}</p>
               </div>
@@ -25,6 +27,7 @@
             <br>
             <br>
           </div>
+
         </div>
   </div>
 </div>

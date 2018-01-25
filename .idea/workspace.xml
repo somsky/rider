@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="351a12bd-f25e-4286-9c92-f16b3739c906" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app/services/uploads/5a69f0ccd8e9a05b4cabea10undefined" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app/services/uploads/5a69f11ed343395bbf79ef71undefined" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app/services/uploads/5a69f4179f570e5f30bb5591undefined" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app/services/uploads/5a69f49f1734c05fefe9eb57undefined" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/app/services/uploads/5a69fa18ccee8f6441dd4583undefined" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js" afterPath="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js" afterPath="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/api/usersapi.js" afterPath="$PROJECT_DIR$/server/app/api/usersapi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/app/services/cloudinaryService.js" afterPath="$PROJECT_DIR$/server/app/services/cloudinaryService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/profile/profile.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/profile/profile.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html" afterPath="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,61 +21,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="usersapi.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="usersapi.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="343" column="11" lean-forward="true" selection-start-line="343" selection-start-column="11" selection-end-line="343" selection-end-column="11" />
+            <state relative-caret-position="179">
+              <caret line="329" column="44" lean-forward="true" selection-start-line="329" selection-start-column="44" selection-end-line="329" selection-end-column="44" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="async_hooks.js" pinned="false" current-in-tab="false">
-        <entry file="mock://async_hooks.js">
-          <provider selected="true" editor-type-id="vmFileEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="administrateUsers.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="administrateTweets.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tweet.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/models/tweet.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-              <folding>
-                <marker date="1516891619192" expanded="true" signature="122:272" ph="{&quot;text&quot;: String...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="timeline_global.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -93,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cloudinaryService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/services/cloudinaryService.js">
+      <file leaf-file-name="administrateTweets.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+            <state relative-caret-position="54">
+              <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -106,8 +56,8 @@
       <file leaf-file-name="timeline_global.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -116,22 +66,59 @@
       <file leaf-file-name="timeline_friends.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="435">
+              <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tweeteditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js">
+      <file leaf-file-name="administrateUsers.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-                <marker date="1516891619192" expanded="true" signature="725:728" ph="{...}" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entry.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/profile/profile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userProfile.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,9 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/aurelia_project/aurelia.json" />
-        <option value="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html" />
-        <option value="$PROJECT_DIR$/server/app/models/user.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/userView.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.html" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.html" />
@@ -231,12 +215,15 @@
         <option value="$PROJECT_DIR$/server/app/models/tweet.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/tweeteditor/tweeteditor.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.html" />
-        <option value="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html" />
         <option value="$PROJECT_DIR$/server/app/services/cloudinaryService.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js" />
-        <option value="$PROJECT_DIR$/server/app/api/usersapi.js" />
         <option value="$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.js" />
         <option value="async_hooks.js" />
+        <option value="$PROJECT_DIR$/server/app/api/usersapi.js" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/profile/profile.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html" />
+        <option value="$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html" />
       </list>
     </option>
   </component>
@@ -335,6 +322,38 @@
               <item name="src" type="cbb8eebc:String" user="src" />
               <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
               <item name="administrateUsers" type="cbb8eebc:String" user="administrateUsers" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+              <item name="profile" type="cbb8eebc:String" user="profile" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+              <item name="timeline_friends" type="cbb8eebc:String" user="timeline_friends" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+              <item name="timeline_global" type="cbb8eebc:String" user="timeline_global" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="rider" type="cbb8eebc:String" user="rider" />
+              <item name="client" type="cbb8eebc:String" user="client" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="viewmodels" type="cbb8eebc:String" user="viewmodels" />
+              <item name="userProfile" type="cbb8eebc:String" user="userProfile" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -545,13 +564,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95026000" />
+    <option name="totallyTimeSpent" value="95459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13396624" sideWeight="0.48988765" order="0" side_tool="false" content_ui="combo" x="182" y="220" width="309" height="860" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1877637" sideWeight="0.48988765" order="0" side_tool="false" content_ui="combo" x="182" y="220" width="309" height="860" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -635,48 +654,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/userspace-nav-bar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="2" lean-forward="false" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/node_modules/aurelia-event-aggregator/dist/aurelia-event-aggregator.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/scripts/app-bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="104" column="9" lean-forward="false" selection-start-line="104" selection-start-column="9" selection-end-line="104" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="56" lean-forward="false" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/adminLogin/adminLogin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/viewmodels/signup/signup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -946,22 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -975,7 +936,7 @@
     <entry file="file://$PROJECT_DIR$/server/app/services/cloudinaryService.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
-          <caret line="57" column="22" lean-forward="true" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <caret line="57" column="22" lean-forward="false" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -985,16 +946,6 @@
         <state relative-caret-position="167">
           <caret line="735" column="10" lean-forward="false" selection-start-line="735" selection-start-column="10" selection-end-line="735" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,8 +961,82 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/app/api/usersapi.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="343" column="11" lean-forward="true" selection-start-line="343" selection-start-column="11" selection-end-line="343" selection-end-column="11" />
+        <state relative-caret-position="179">
+          <caret line="329" column="44" lean-forward="true" selection-start-line="329" selection-start-column="44" selection-end-line="329" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_global/timeline_global.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="10" lean-forward="true" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/timeline_friends/timeline_friends.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/profile/profile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="31" column="16" lean-forward="false" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/userProfile/userProfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/administrateUsers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateUsers/entry.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/viewmodels/administrateTweets/administrateTweets.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="7" column="10" lean-forward="false" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
           <folding />
         </state>
       </provider>
