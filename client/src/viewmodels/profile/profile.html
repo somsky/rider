@@ -19,12 +19,14 @@
                   <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
                 </div>
               </div>
-              <img class="ui centered small image" src=${tweet.imageURL}>
+              <img class="ui centered small image" src=${tweet.imageURL} alt="">
               <div class="content">
                 <p>${tweet.text}</p>
               </div>
               <div class="extra content">
                 <p>${tweet.time}</p>
+                <Label>Select </Label>
+                <input type="checkbox" checked.bind="tweet.isSelected">
               </div>
             </div>
             <br>

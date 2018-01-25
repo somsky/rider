@@ -21,13 +21,15 @@ export class Profile {
 
   deleteSelectedTweets(){
     let tweetsToDelete = [];
+    let newTweets = [];
     this.tweets.forEach(tweet => {
       if (tweet.isSelected) {
         tweetsToDelete.push(tweet);
-        let indexDel = this.tweets.indexOf(tweet);
-        this.tweets.splice(indexDel, 1);
       }
+      else
+        newTweets.push(tweet);
     });
+    this.tweets = newTweets;
     this.riderService.deleteTweets(tweetsToDelete);
 
   }
