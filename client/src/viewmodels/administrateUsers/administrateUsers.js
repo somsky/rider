@@ -15,13 +15,15 @@ export class UserView {
 
   deleteSelectedUsers(entry) {
     let selectedUsers = [];
+    let newUserList = [];
     this.entries.forEach( entry => {
       if (entry.isSelected) {
         selectedUsers.push(entry);
-        let i = this.entries.indexOf(entry);
-        this.entries.splice(i, 1);
       }
+      else
+        newUserList.push(entry);
     });
+    this.entries = newUserList;
     this.riderService.adminDeleteUsers(selectedUsers);
   }
 

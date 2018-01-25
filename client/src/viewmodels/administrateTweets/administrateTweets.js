@@ -17,13 +17,15 @@ export class Settings {
 
   deleteSelectedTweets(){
     let tweetsToDelete = [];
+    let newTweetsList = [];
     this.tweets.forEach(tweet => {
       if (tweet.isSelected) {
         tweetsToDelete.push(tweet);
-        let indexDel = this.tweets.indexOf(tweet);
-        this.tweets.splice(indexDel, 1);
       }
+      else
+        newTweetsList.push(tweet);
     });
+    this.tweets = newTweetsList;
     this.riderService.adminDeleteTweets(tweetsToDelete);
 
   }

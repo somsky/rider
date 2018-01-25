@@ -276,7 +276,10 @@ exports.deleteTweets = {
   handler: function (request, reply) {
     for (let i = 0; i < request.payload.length; i++){
       Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
-        if(err)
+        /* eventually delete image of tweet */
+        if (request.payload[i].imageURL !== undefined)
+          cloudinaryService.deletePicture(request.payload[i].imageURL);
+          if(err)
             reply(Boom.notFound('internal db failure'));
         else
           reply('tweet ${request.payload[i]._id} deleted').code(200);
@@ -302,13 +305,14 @@ exports.adminDeleteTweets = {
 
       /* remove tweets */
         for (let i = 0; i < request.payload.length; i++){
-              Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
-                  if(err)
-                      reply(Boom.notFound('internal db failure'));
-                  else
-                      reply('tweet ${request.payload[i]._id} deleted').code(200);
-              });
+            Tweet.findOne({_id: request.payload[i]._id}).remove( err => {
+              if (request.payload[i].imageURL !== undefined)
+                  cloudinaryService.deletePicture(request.payload[i].imageURL);
+              if(err)
+                  console.log(err);
+            });
           }
+        reply('Tweets successfully deleted.').code(200);
     }
 
 };
@@ -331,6 +335,13 @@ exports.adminDeleteUsers = {
         let luserId = [];
         request.payload.forEach(user => {
           luserId.push(user._id);
+        });
+
+        Tweet.find({'userId': {$in: luserId}}).then( tweets => {
+          for (let i = 0; i < tweets.length; i++) {
+              if (tweets[i].imageURL !== undefined)
+                  cloudinaryService.deletePicture(tweets[i].imageURL);
+          }
         });
 
         /* remove tweets of selected users*/

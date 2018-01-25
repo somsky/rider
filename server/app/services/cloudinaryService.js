@@ -49,6 +49,15 @@ const cloudinaryService = {
 
         });
       });
+  },
+
+  deletePicture(imageURL) {
+      let idStartIndex = imageURL.lastIndexOf('/') + 1;
+      let idEndIndex = imageURL.lastIndexOf('.');
+      let imgId = imageURL.substring(idStartIndex, idEndIndex);
+      cloudinary.v2.uploader.destroy(imgId, res => {
+          console.log(imgId + ' destroyed.');
+      });
   }
 
 };
