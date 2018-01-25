@@ -3,8 +3,10 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
-var dbURI =  'mongodb://localhost/donation';
+//var dbURI =  'mongodb://localhost/donation';
+var dbURI =  'mongodb://somsky:secretpassword@ds113098.mlab.com:13098/ridermongodb';
 if (process.env.NODE_ENV === 'production') {
+    dbURI =  'mongodb://somsky:secretpassword@ds113098.mlab.com:13098/ridermongodb';
   dbURI = process.env.MONGOLAB_URI;
 }
 

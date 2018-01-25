@@ -21,5 +21,5 @@ module.exports = [
   //{ method: 'GET', path: '/settings', config: Accounts.viewSettings },
   //{ method: 'POST', path: '/settings', config: Accounts.updateSettings },
 
-  //{ method: 'GET', path: '/{param*}',config: { auth: false },handler: Assets.servePublicDirectory },
+  //{ method: 'GET', path: '/{param*}',config: {auth: false ,handler: Assets.servePublicDirectory }}
 ];

@@ -11,10 +11,6 @@ export class socialGraph {
 
   constructor(rs) {
     this.riderService = rs;
-
-
-
-
   }
 
   attached() {
@@ -24,14 +20,20 @@ export class socialGraph {
       this.userList = res.content;
 
       for (let i = 0; i < this.userList.length; i++) {
-        this.nodes.push({"id": this.userList[i]._id});
+        this.nodes.push({"id": this.userList[i].userName});
       }
 
       for (let i = 0; i < this.userList.length; i++) {
         for (let j = 0; j < this.userList[i].friends.length; j++) {
+          /* failsafe */
           if (this.userList[i] === null)
             continue;
-          this.links.push({"source": this.userList[i]._id, "target": this.userList[i].friends[j]});
+          /* find username of friend */
+          for (let k = 0; k < this.userList.length; k++) {
+            if (this.userList[k]._id === this.userList[i].friends[j]) {
+              this.links.push({"source": this.userList[i].userName, "target": this.userList[k].userName});
+            }
+          }
         }
 
       }
@@ -67,6 +69,8 @@ export class socialGraph {
       .data(this.nodes)
       .enter().append("circle")
       .attr("r", 10)
+      .on("mouseover", mouseover)
+      .on("mouseout", mouseout)
       .attr("fill", function (d) {
         return color(d.group);
       })
@@ -131,6 +135,18 @@ export class socialGraph {
       if (!d3.event.active) simulation.alphaTarget(0);
       d.fx = null;
       d.fy = null;
+    }
+
+    function mouseover() {
+      d3.select(this).select("circle").transition()
+        .duration(750)
+        .attr("text", "honolulu");
+    }
+
+    function mouseout() {
+      d3.select(this).select("circle").transition()
+        .duration(750)
+        .attr("r", 8);
     }
   });
 

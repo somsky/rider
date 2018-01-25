@@ -70,10 +70,10 @@ export default class RiderService {
     this.ac.post('/api/users/updateSettings', settings);
   }
 
-  postTweet(text){
-    const tweet = {
-      text: text,
-    };
+  postTweet(tweet){
+    ///const tweet = {
+    //  text: text,
+    //};
     //console.log('posting a tweet ' + text);
     this.ac.post('/api/users/postTweet', tweet).then(response => {
       let status = {

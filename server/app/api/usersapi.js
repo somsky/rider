@@ -2,7 +2,7 @@ const utils = require('./utils');
 const User = require('../models/user');
 const Tweet = require('../models/tweet');
 const Joi = require('joi');
-const multiparty = require('multiparty');
+const cloudinaryService = require('../services/cloudinaryService');
 
 /* Authenticate sends back a json web token when an email and a matching
     password are provided */
@@ -41,23 +41,40 @@ exports.postTweet = {
     strategy: 'jwt',
   },
 
+  payload: {
+    output: 'stream',
+    allow: 'multipart/form-data' // important
+  },
+
   handler: function(request, reply) {
-    const contents = {
-      userId: request.auth.credentials.id,
-      text: request.payload.text,
-    };
-    
-    const tweet = new Tweet(contents);
-    if (tweet.text.length > 140)
-      tweet.text = tweet.text.substring(0, 140);
 
-    tweet.save().then(newTweet => {
-      reply(newTweet).code(201);
-    }).catch(err => {
-      reply(Boom.notFound('internal db failure'));
-    });
+    if (request.payload.tweetText === undefined) {
+      reply(Boom.badRequest());
+    }
+    if (request.payload.tweetText.length > 140) {
+      request.payload.tweetText = request.payload.tweetText.substring(0,139);
+    }
 
+    // save tweet with image
+    if (request.payload.tweetImage !== undefined) {
+      cloudinaryService.uploadPicture(request.auth.credentials.id,
+          request.payload, reply);
+    }
+    // save tweet without image
+    else {
+        const contents = {
+            userId: request.auth.credentials.id,
+            imageURL: "",
+            text: request.payload.tweetText,
+        };
 
+        const tweet = new Tweet(contents);
+        tweet.save().then(newTweet => {
+            reply(newTweet).code(201);
+        }).catch(err => {
+            reply(Boom.notFound('internal db failure'));
+        });
+    }
   }
 
 };
@@ -91,7 +108,7 @@ exports.getUser = {
     User.findOne({_id: reqId}).then( foundUser => {
       reply(foundUser).code(200);
     }).catch(err => {
-      reply(Boom.notFound(`tweet dosn't exist`));
+      reply(Boom.notFound(`user dosn't exist`));
     });
   }
 };

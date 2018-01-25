@@ -7,6 +7,9 @@
                 <div class="field">
                     <label>Text</label> <input type="text" placeholder="" value.bind="tweetText" maxlength="140"/>
                 </div>
+                <div class="field">
+                  <Label>Image(optional)</Label><input type="file" files.bind="imageFile">
+                </div>
                 
                 <button class="ui blue submit button">Post</button>
                 <h3>${prompt}</h3>

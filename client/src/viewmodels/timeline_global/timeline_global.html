@@ -11,15 +11,16 @@
 
     <div repeat.for="tweet of tweets" class="center">
         <div class="ui card center top-margin">
-            <div class="content">
-                <div class="header">@${tweet.userId.userName} wrote</div>
-                <div class="meta">
-                    <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
-                </div>
+          <div class="content">
+            <div class="header">@${tweet.userId.userName} wrote</div>
+            <div class="meta">
+                <p>${tweet.userId.firstName} ${tweet.userId.lastName}</p>
             </div>
-            <div class="content">
-                <p>${tweet.text}</p>
-            </div>
+          </div>
+            <img class="ui centered small image" src=${tweet.imageURL}>
+          <div class="content">
+            <p>${tweet.text}</p>
+          </div>
             <div class="extra content">
                 <p>${tweet.time}</p>
             </div>

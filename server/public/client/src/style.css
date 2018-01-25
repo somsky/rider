@@ -1,0 +1,44 @@
+
+.banner {
+	background: url("/client/assets/banner_bkg.png") top center;
+	background-position: center;
+	color: white;
+	height: 300px;
+	margin-bottom: 2em;
+}
+
+.bannertext {
+	padding-left: 6em;
+	padding-right: 6em;
+	padding-bottom: 2em;
+
+	background-color: rgba(0,0,0,0.25);
+	float: left;
+}
+
+.signuptext {
+	font-size: 2em;
+	white-space: nowrap;
+}
+
+.indextext {
+	font-size: 1.5em;
+}
+
+.body-margin {
+	margin-left: 13em;
+	margin-right: 13em;
+}
+
+.card-margin {
+	margin-left: 13em;
+	margin-right: 13em;
+}
+
+h1 {
+	font-size: 6em;
+}
+
+hr {
+	margin: 1em;
+}

@@ -1,44 +1,55 @@
 'use strict';
 
 const cloudinary = require('cloudinary');
+const fs = require('fs');
+const Tweet = require('../models/tweet');
+const Boom = require('boom');
 
 /* include the cloudinary config file */
 try {
-  const env = require('../.data/.env.json');
-  cloudinary.config(env.cloudinary);
+  cloudinary.config({
+      cloud_name: 'dwhbw3aly',
+      api_key: 599872134687125,
+      api_secret: '0vZGuNHz-CigypdV-XsWh8Jfw5w'
+  });
 }
 catch(e) {
-  logger.info('You must provide a Cloudinary credentials file - see README.md');
-  process.exit(1);
+  console.log('cloudinary access failed');
 }
 
 
 const cloudinaryService = {
+  uploadPicture(userId, tweet, reply) {
+      let name =  userId + tweet.tweetImage.hapi.name;
+      let path = __dirname + '/uploads/' + name;
+      let file = fs.createWriteStream(path);
 
-  addPicture(userId, title, imageFile, response) {
+      file.on('error', err => {
+          console.error(err);
+      });
+      let image = tweet.tweetImage;
+      image.pipe(file);
+      image.on('end', err => {
+        cloudinary.uploader.upload(path, result => {
+            console.log(result.url);
 
-    imageFile.mv('tempimage', err => {
+            const contents = {
+                userId: userId,
+                imageURL: result.url,
+                text: tweet.tweetText,
+            };
 
-      if (!err) {
-        cloudinary.uploader.upload('tempimage', result => {
-          console.log(result);
-          const picture = {
-            img: result.url,
-            title: title,
-          };
+            const mtweet = new Tweet(contents);
+
+            mtweet.save().then(newTweet => {
+                reply(newTweet).code(201);
+            }).catch(err => {
+                reply(Boom.notFound('internal db failure'));
+            });
+
         });
-      }
-    });
-  },
-
-  deletePicture(userId, image) {
-    const id = path.parse(image);
-    let album = this.getAlbum(userId);
-    _.remove(album.photos, { img: image });
-    cloudinary.api.delete_resources([id.name], function (result) {
-      console.log(result);
-    });
-  },
+      });
+  }
 
 };
 

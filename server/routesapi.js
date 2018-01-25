@@ -3,7 +3,7 @@ const UsersApi = require('./app/api/usersapi');
 module.exports = [
 
     /* authentication & signup*/
-    { method: 'POST', path: '/api/users/authenticate', config: UsersApi.authenticate },
+    { method: 'POST', path: '/api/users/authenticate', config: UsersApi.authenticate},
     { method: 'POST', path: '/api/users/register', config: UsersApi.register },
     /* user settings */
     { method: 'POST', path: '/api/users/updateSettings', config: UsersApi.updateSettings },

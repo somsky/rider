@@ -6,6 +6,7 @@ const User = require('./user');
 const tweetSchema = mongoose.Schema({
   userId: { type : mongoose.Schema.Types.ObjectId, ref : 'User' },
   text: String,
+  imageURL: String,
   time : { type : Date, default: Date.now }
 });
 
