@@ -15,3 +15,17 @@ The application is not deployed on heroku and must be hosted locally.
 
 the development was managed using git. The whole application is available at 
 https://github.com/somsky/rider.
+
+
+There are several users that can be tried out, all passwords are 'secret'.
+Users with admin rights can use the admin-login form.
+
+marge@simpson.com - admin
+bart@simpson.com
+skinner@simpson.com
+homer@simpson.com
+neslon@simpson.com
+reverent@simpson.com
+
+The application can be tested by using "au run --watch" in the client folder
+and "node index" in the server folder.
